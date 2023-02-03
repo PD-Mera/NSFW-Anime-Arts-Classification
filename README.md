@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## Data
 
-- I get my data from gelbooru and safebooru. You can use your own data or crawl from internet, you can google and try on your own.
+- I get my data from gelbooru and safebooru. You can use your own data or crawl from internet.
 
 - Data in this format
 
