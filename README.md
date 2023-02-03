@@ -66,4 +66,4 @@ python infer.py
 
 - NSFW Image 
 
-You can try on your own ;)
+You can try on your own :wink:
