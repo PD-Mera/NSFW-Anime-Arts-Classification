@@ -87,7 +87,7 @@ def train(config):
         runtime = stop - start
         eta = int(runtime * (config['train']['epoch'] - epoch - 1))
         eta = str(datetime.timedelta(seconds=eta))
-        logger.info(f'Runing time: Epoch {epoch + 1}: {int(runtime)}| ETA: {eta}')
+        logger.info(f'Runing time: Epoch {epoch + 1}: {int(datetime.timedelta(runtime))} | ETA: {eta}')
 
         torch.save(model.state_dict(), os.path.join(config['train']['model_savepath'], f'{model_type}_last.pth'))
         logger.info(f"Saving last model to {os.path.join(config['train']['model_savepath'], f'{model_type}_last.pth')}\n")
