@@ -49,7 +49,7 @@ python train.py --cfg ./cfg/config.yaml
 Some experiment results
 
 | Model | Training Info | Epoch | Best Accuracy | Pretrained | Model size |
-| --- |:---:| :---: | :---: | :---: |
+| --- |:---:| :---: | :---: | :---: | :---: |
 | Regnet_X_800MF | Adam, lr=**1e-4** to **1e-6** | 100 | 94.78% | [Model](https://drive.google.com/file/d/1xQDr3NVkyqMf3wDdPBpMScyuBO73VyLn/view?usp=share_link) | 27.96MB |
 
 You can download weight file above and put in `weights` folder and run inference
