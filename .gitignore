@@ -1,0 +1,12 @@
+__pycache__/
+
+venv*/
+
+data/
+results/
+
+*.zip
+*.pth
+*.log
+
+!.gitkeep

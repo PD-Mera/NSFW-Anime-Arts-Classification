@@ -1,0 +1,58 @@
+class:
+  num: 2
+  name: 
+    - NSFW
+    - SFW
+
+modelname: regnetx800mf
+image_size: [224, 224]
+load_checkpoint: ./weights/regnetx800mf_best.pth
+log_savepath: ./train.log
+log_mode: w # a or w
+
+
+train:
+  path: ./data/train/
+  epoch: 20
+  batch_size: 128
+  num_workers: 4
+  smooth: 1 # Apply smoothing label
+  optimizer: Adam
+  learning_rate: !!float 1e-4
+  loss_fn: CE
+  model_savepath: ./weights/
+  
+
+valid:
+  path: ./data/valid/
+  batch_size: 64
+  num_workers: 4
+
+test:
+  path: ~
+  result_path: ./results
+
+MODEL_AVAILABLE: [
+  custom, 
+  mobilenetv3s,
+  regnetx800mf, regnetx8gf,
+  resnet18, resnet50, resnet152
+]
+
+OPTIMIZER_AVAILABLE:
+  - Adam
+
+LOSS_AVAILABLE:
+  - custom
+  - CE
+
+
+
+
+
+
+
+
+
+
+
